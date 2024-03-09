@@ -1,1 +1,3 @@
-const count = () => {}
+const count = () => {
+ const  countadd = 1
+}
