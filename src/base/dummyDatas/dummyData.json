@@ -1,6 +1,32 @@
 [
-  { "hrllo": "dgfo;igjiro" },
-  { "hrllo": "dgfo;igjiro" },
-  { "hrllo": "dgfo;igjiro" },
-  { "hrllo": "dgfo;igjiro" }
+  {
+    "movieId": 1,
+    "image": "/images/funnywildlife.jpeg",
+    "movieTitle": "wild life",
+    "movieDescription": "This is a movie about wild life"
+  },
+  {
+    "movieId": 2,
+    "image": "/images/funnywildlife.jpeg",
+    "movieTitle": "wild life",
+    "movieDescription": "This is a movie about wild life"
+  },
+  {
+    "movieId": 3,
+    "image": "/images/funnywildlife.jpeg",
+    "movieTitle": "wild life",
+    "movieDescription": "This is a movie about wild life"
+  },
+  {
+    "movieId": 4,
+    "image": "/images/funnywildlife.jpeg",
+    "movieTitle": "wild life",
+    "movieDescription": "This is a movie about wild life"
+  },
+  {
+    "movieId": 5,
+    "image": "/images/funnywildlife.jpeg",
+    "movieTitle": "wild life",
+    "movieDescription": "This is a movie about wild life"
+  }
 ]

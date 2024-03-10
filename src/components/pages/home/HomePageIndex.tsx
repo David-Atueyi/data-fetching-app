@@ -1,13 +1,13 @@
-import { Cards } from "../../global/cards/Cards"
+import { Cards } from "../../global/cards/Cards";
 
 export const HomePageIndex = () => {
   return (
-    <div className="flex flex-col gap-3 p-1">
-      <div className="w-[100%] h-[300px]">
+    <div className="flex flex-col gap-3 p-1 bg-slate-100">
+      <div className="w-[100%] h-[500px]">   
         <img
           src="/images/cat.jpg"
           alt=""
-          className="w-[100%] h-[100%] object-cover rounded"
+          className="w-[100%] h-[100%] object-cover rounded "
         />
       </div>
       <div>
@@ -16,10 +16,6 @@ export const HomePageIndex = () => {
         </h1>
         <div className="flex gap-2">
           <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
         </div>
       </div>
       <div>
@@ -27,10 +23,6 @@ export const HomePageIndex = () => {
           trending
         </h1>
         <div className="flex gap-2">
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
           <Cards />
         </div>
       </div>

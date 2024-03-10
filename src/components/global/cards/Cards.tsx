@@ -1,14 +1,25 @@
+import { Link } from "react-router-dom";
+import movies from "../../../base/dummyDatas/dummyData.json";
+import { IMovie } from "../../../base/interface/IMovie";
 
 export const Cards = () => {
   return (
-    <div className='border-2 rounded w-[200px] flex flex-col'>
-      <div className='h-[160px]'>
-        <img src="/images/funnywildlife.jpeg" alt="" className='w-[100%] h-[100%] object-cover rounded'/>
-      </div>
-      <div className='p-2'>
-        <h3 className='uppercase font-bold'>wild life</h3>
-        <p>This is a movie about wild life</p>
-      </div>
-    </div>
+    <>
+      {movies.map((movie: IMovie) => (
+        <Link to={"/"} className="border-2 rounded w-[200px] flex flex-col hover:shadow-xl transition-shadow duration-500 bg-white group">
+          <div className="h-[160px]">
+            <img
+              src={movie.image}
+              alt=""
+              className="w-[100%] h-[100%] object-cover rounded group-hover:scale-105 transition-all duration-300"
+            />
+          </div>
+          <div className="p-2">
+            <h3 className="uppercase font-bold">{movie.movieTitle}</h3>
+            <p>{movie.movieDescription}</p>
+          </div>
+        </Link>
+      ))}
+    </>
   );
-}
+};
