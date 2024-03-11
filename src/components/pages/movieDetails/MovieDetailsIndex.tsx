@@ -5,7 +5,6 @@ import { PlayIcon } from "../../icons/PlayIcon";
 import { PlusIcon } from "../../icons/PlusIcon";
 import { ThumbsUpIcon } from "../../icons/ThumbsUpIcon";
 import { VolumeIcon } from "../../icons/VolumeIcon";
-import { watchListMovies } from "../watchlist/WatchListPageIndex";
 
 
 
@@ -17,11 +16,6 @@ export const MovieDetailsIndex = () => {
     (movie: IMovie) => movie.movieId === Number(movieId)
   );
   // 
-const handleWatchList = () =>{
-  if (movie && !watchListMovies.includes(movie)) {
-    watchListMovies.push(movie);
-  }
-}
 
   if (movie) {
     return (
@@ -34,9 +28,7 @@ const handleWatchList = () =>{
           />
           <div className="absolute bottom-10 left-6 flex">
             <PlayIcon />
-            <button onClick={handleWatchList}>
             <PlusIcon />
-            </button>
             <ThumbsUpIcon />
           </div>
           {/*  */}
@@ -50,7 +42,15 @@ const handleWatchList = () =>{
           {movie.movieTitle}
         </h1>
         <p>
-          <span className="font-bold text-xl capitalize">about movie: </span>
+          <span className="font-bold text-xl capitalize">title: </span>
+          {movie.movieTitle}
+        </p>
+        <p>
+          <span className="font-bold text-xl capitalize">year: </span>
+          {movie.year}
+        </p>
+        <p>
+          <span className="font-bold text-xl capitalize">movie description: </span>
           {movie.movieDescription}
         </p>
        </div>

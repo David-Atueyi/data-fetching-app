@@ -3,27 +3,13 @@ import { Cards } from "../../global/cards/Cards";
 export const HomePageIndex = () => {
   return (
     <div className="flex flex-col gap-3 p-1">
-      <div className="w-[100%] h-[500px]">   
-        <img
-          src="/images/cat.jpg"
-          alt=""
-          className="w-[100%] h-[100%] object-cover rounded-sm"
-        />
-      </div>
       <div>
-        <h1 className="bg-blue-600 p-2 font-semibold uppercase text-white mb-2">
-          newly added
+        <h1 className="text-center text-black p-2 font-bold uppercase mb-2">
+          movies
         </h1>
         <div className="flex gap-2 flex-wrap">
           <Cards />
-        </div>
-      </div>
-      <div>
-        <h1 className="bg-blue-600 p-2 font-semibold uppercase text-white mb-2">
-          trending
-        </h1>
-        <div className="flex gap-2 flex-wrap">
-          <Cards />
+          <Cards/>
         </div>
       </div>
       <div className="flex justify-center space-x-2">
