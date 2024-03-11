@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import movies from "../../../base/dummyDatas/dummyData.json";
 import { IMovie } from "../../../base/interface/IMovie";
 
@@ -6,7 +6,7 @@ export const Cards = () => {
   return (
     <>
       {movies.map((movie: IMovie) => (
-        <Link to={"/"} className="border-2 rounded w-[200px] flex flex-col hover:shadow-xl transition-shadow duration-500 bg-white group">
+        <NavLink to={`/movie_details/${movie.movieId}`} className="border-2 rounded w-[200px] flex flex-col hover:shadow-xl transition-shadow duration-500 bg-white group">
           <div className="h-[160px]">
             <img
               src={movie.image}
@@ -18,7 +18,7 @@ export const Cards = () => {
             <h3 className="uppercase font-bold">{movie.movieTitle}</h3>
             <p>{movie.movieDescription}</p>
           </div>
-        </Link>
+        </NavLink>
       ))}
     </>
   );

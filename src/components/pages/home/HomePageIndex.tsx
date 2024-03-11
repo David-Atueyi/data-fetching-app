@@ -7,7 +7,7 @@ export const HomePageIndex = () => {
         <img
           src="/images/cat.jpg"
           alt=""
-          className="w-[100%] h-[100%] object-cover rounded "
+          className="w-[100%] h-[100%] object-cover rounded-sm"
         />
       </div>
       <div>
