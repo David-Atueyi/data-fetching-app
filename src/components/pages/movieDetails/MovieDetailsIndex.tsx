@@ -5,13 +5,23 @@ import { PlayIcon } from "../../icons/PlayIcon";
 import { PlusIcon } from "../../icons/PlusIcon";
 import { ThumbsUpIcon } from "../../icons/ThumbsUpIcon";
 import { VolumeIcon } from "../../icons/VolumeIcon";
+import { watchListMovies } from "../watchlist/WatchListPageIndex";
+
+
 
 export const MovieDetailsIndex = () => {
+    
   const { movieId } = useParams<{ movieId: string }>();
 
   const movie = movies.find(
     (movie: IMovie) => movie.movieId === Number(movieId)
   );
+  // 
+const handleWatchList = () =>{
+  if (movie && !watchListMovies.includes(movie)) {
+    watchListMovies.push(movie);
+  }
+}
 
   if (movie) {
     return (
@@ -24,7 +34,9 @@ export const MovieDetailsIndex = () => {
           />
           <div className="absolute bottom-10 left-6 flex">
             <PlayIcon />
+            <button onClick={handleWatchList}>
             <PlusIcon />
+            </button>
             <ThumbsUpIcon />
           </div>
           {/*  */}
