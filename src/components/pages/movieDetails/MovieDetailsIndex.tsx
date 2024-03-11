@@ -57,5 +57,4 @@ export const MovieDetailsIndex = () => {
       </div>
     );
   }
-  return <div>Movie Not Found</div>;
 };
