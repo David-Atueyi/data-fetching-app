@@ -3,36 +3,42 @@
     "movieId": 1,
     "image": "/images/movie1.jpg",
     "movieTitle": "wild life 1",
-    "movieDescription": "This is a movie about wild life"
+    "movieDescription": "This is a movie about wild life",
+    "year": "2022"
   },
   {
     "movieId": 2,
     "image": "/images/movie2.jpg",
     "movieTitle": "wild life 2",
-    "movieDescription": "This is a movie about wild life"
+    "movieDescription": "This is a movie about wild life",
+    "year": "2022"
   },
   {
     "movieId": 3,
     "image": "/images/movie3.jpg",
     "movieTitle": "wild life 3",
-    "movieDescription": "This is a movie about wild life"
+    "movieDescription": "This is a movie about wild life",
+    "year": "2022"
   },
   {
     "movieId": 4,
     "image": "/images/movie4.jpg",
     "movieTitle": "wild life 4",
-    "movieDescription": "This is a movie about wild life"
+    "movieDescription": "This is a movie about wild life",
+    "year": "2022"
   },
   {
     "movieId": 5,
     "image": "/images/movie5.jpg",
     "movieTitle": "wild life 5",
-    "movieDescription": "This is a movie about wild life"
+    "movieDescription": "This is a movie about wild life",
+    "year": "2022"
   },
   {
     "movieId": 6,
     "image": "/images/cat.jpg",
     "movieTitle": "wild life 5",
-    "movieDescription": "This is a movie about wild life"
+    "movieDescription": "This is a movie about wild life",
+    "year": "2022"
   }
 ]
